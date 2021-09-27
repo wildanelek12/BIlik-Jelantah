@@ -9,23 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BilikJelantah">
+        <activity android:name=".RiwayatPenyetoran"></activity>
+        <activity android:name=".SuksesSetorActivity" />
+        <activity android:name=".KonfirmasiSetor"></activity>
+        <activity
+            android:name=".BonusActivity"
+            android:label="@string/title_activity_bonus" />
         <activity
             android:name=".TarikTunaiActivity"
             android:label="@string/title_activity_tarik_tunai"
-            android:theme="@style/Theme.BilikJelantah.NoActionBar">
+            android:theme="@style/Theme.BilikJelantah.NoActionBar" />
+        <activity android:name=".SetorMinyak" />
+        <activity
+            android:name=".MainMenu"
+            android:label="@string/title_activity_main_menu" />
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SetorMinyak">
-
-        </activity>
-        <activity
-            android:name=".MainMenu"
-            android:label="@string/title_activity_main_menu" />
-        <activity android:name=".LoginActivity"></activity>
         <activity android:name=".MainActivity" />
     </application>
 

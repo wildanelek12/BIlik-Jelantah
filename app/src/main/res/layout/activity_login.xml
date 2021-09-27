@@ -50,6 +50,7 @@
         app:layout_constraintTop_toBottomOf="@+id/et_email" />
 
     <ImageView
+        android:id="@+id/btn_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_login"

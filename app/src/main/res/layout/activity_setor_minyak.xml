@@ -48,17 +48,18 @@
                 android:fontFamily="@font/medium"
                 android:text="Nama Penyetor"
                 android:textSize="15sp"
-                app:layout_constraintBottom_toTopOf="@+id/editText"
+                app:layout_constraintBottom_toTopOf="@+id/et_nama_penyetor"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/et_nama_penyetor"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_25sdp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
+                android:padding="@dimen/_5sdp"
                 android:background="@drawable/bg_et_setor"
                 app:layout_constraintBottom_toTopOf="@+id/textView99"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -73,17 +74,18 @@
                 android:fontFamily="@font/medium"
                 android:text="Alamat"
                 android:textSize="15sp"
-                app:layout_constraintBottom_toTopOf="@+id/editText9"
+                app:layout_constraintBottom_toTopOf="@+id/et_alamat_penyetor"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText" />
+                app:layout_constraintTop_toBottomOf="@+id/et_nama_penyetor" />
 
             <EditText
-                android:id="@+id/editText9"
+                android:id="@+id/et_alamat_penyetor"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_25sdp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
+                android:padding="@dimen/_5sdp"
                 android:background="@drawable/bg_et_setor"
                 app:layout_constraintBottom_toTopOf="@+id/textView999"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -99,15 +101,16 @@
                 android:fontFamily="@font/medium"
                 android:text="No HP"
                 android:textSize="15sp"
-                app:layout_constraintBottom_toTopOf="@+id/editText99"
+                app:layout_constraintBottom_toTopOf="@+id/et_handphone_penyetor"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText9" />
+                app:layout_constraintTop_toBottomOf="@+id/et_alamat_penyetor" />
 
             <EditText
-                android:id="@+id/editText99"
+                android:id="@+id/et_handphone_penyetor"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_25sdp"
+                android:padding="@dimen/_5sdp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/bg_et_setor"
@@ -122,19 +125,21 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
                 android:layout_marginBottom="10dp"
+                
                 android:fontFamily="@font/medium"
                 android:text="Tanggal"
                 android:textSize="15sp"
-                app:layout_constraintBottom_toTopOf="@+id/editText999"
+                app:layout_constraintBottom_toTopOf="@+id/et_tgl_penyetor"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText99" />
+                app:layout_constraintTop_toBottomOf="@+id/et_handphone_penyetor" />
 
             <EditText
-                android:id="@+id/editText999"
+                android:id="@+id/et_tgl_penyetor"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_25sdp"
                 android:layout_marginTop="5dp"
+                android:padding="@dimen/_5sdp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/bg_et_setor"
                 android:drawableRight="@drawable/ic_baseline_date_range_24"
@@ -154,13 +159,14 @@
                 android:textSize="15sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText999" />
+                app:layout_constraintTop_toBottomOf="@+id/et_tgl_penyetor" />
 
             <EditText
-                android:id="@+id/editText9999"
+                android:id="@+id/et_jumlah_setor"
                 android:layout_width="@dimen/_100sdp"
                 android:layout_height="@dimen/_25sdp"
                 android:layout_marginTop="10dp"
+                android:padding="@dimen/_5sdp"
                 android:background="@drawable/bg_et_setor"
                 android:drawablePadding="@dimen/_10sdp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -173,31 +179,34 @@
                 android:text="Liter"
                 android:textSize="20sp"
                 android:paddingHorizontal="@dimen/_10sdp"
-                app:layout_constraintBottom_toBottomOf="@+id/editText9999"
+                app:layout_constraintBottom_toBottomOf="@+id/et_jumlah_setor"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/editText9999"
-                app:layout_constraintTop_toTopOf="@+id/editText9999" />
+                app:layout_constraintStart_toEndOf="@+id/et_jumlah_setor"
+                app:layout_constraintTop_toTopOf="@+id/et_jumlah_setor" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView2"
+        android:id="@+id/btn_pilih_mtd_penyetoran"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         app:cardCornerRadius="@dimen/_5sdp"
         app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toStartOf="@+id/btn_pilih_mtd_pembayaran"
         app:layout_constraintStart_toStartOf="@+id/cardView"
         app:layout_constraintTop_toBottomOf="@+id/cardView">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_metode_setor"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingVertical="@dimen/_10sdp"
-            android:paddingHorizontal="@dimen/_2sdp">
+            android:paddingHorizontal="@dimen/_2sdp"
+            android:paddingVertical="@dimen/_10sdp">
 
             <TextView
+                android:id="@+id/tv_metode_setor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="2dp"
@@ -215,22 +224,25 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/btn_pilih_mtd_pembayaran"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         app:cardCornerRadius="@dimen/_5sdp"
         app:cardUseCompatPadding="true"
-        app:layout_constraintStart_toEndOf="@+id/cardView2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_pilih_mtd_penyetoran"
         app:layout_constraintTop_toBottomOf="@+id/cardView">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_metode_bayar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:paddingVertical="@dimen/_10sdp"
-            android:paddingHorizontal="@dimen/_2sdp">
+            android:paddingHorizontal="@dimen/_2sdp"
+            android:paddingVertical="@dimen/_10sdp">
 
             <TextView
+                android:id="@+id/tv_metode_bayar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="2dp"
@@ -280,13 +292,17 @@
             app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
         <ImageView
+            android:id="@+id/btn_lanjut_setor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="136dp"
+            android:layout_marginLeft="136dp"
             android:layout_marginEnd="20dp"
             android:layout_marginRight="20dp"
             android:src="@drawable/ic_btn_lanjut_setor"
             app:layout_constraintBottom_toBottomOf="@+id/textView11"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
             app:layout_constraintTop_toTopOf="@+id/textView10" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 

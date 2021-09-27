@@ -18,6 +18,12 @@
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
+        android:id="@+id/navigation_jelantah"
+        android:name="com.codes.bilikjelantah.ui.jelantah.JelantahFragment"
+        android:label="Jelantah.id"
+        tools:layout="@layout/fragment_jelantah" />
+
+    <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.codes.bilikjelantah.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
