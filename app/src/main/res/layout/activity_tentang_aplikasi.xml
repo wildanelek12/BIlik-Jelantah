@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register"
+    android:paddingHorizontal="@dimen/_20sdp"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:text="Tentang Aplikasi"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:text="Bilik Jelantah"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView21"
+        app:layout_constraintEnd_toEndOf="@+id/textView18"
+        app:layout_constraintStart_toStartOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/medium"
+        android:lineHeight="@dimen/_15sdp"
+        android:text="BILIK JELANTAH merupakan aplikasi yang dapat digunakan sebagai wadah penghubung antara rumah tangga sebagaiu konsumen aplikasi dan produsen puupuk berbahan dasar minyak jelantah ataupun pengepul sebagai pihak yang akan membeli dan mengolah minyak jelantah. aplikasi ini difokuskan untuk mengurangi pembuangan minyak jelantah secara tidak bertanggung jawab dan memudahkan pembeli seperti pengrajin, pengepul, ataupun pabrik yang membutuhkan minyak jelantah dalam mendapatkan bahan baku produksi. dengan aplikasi ini, secara tidak langsung masyarakat berkontribusi dalam kelestarian lingkungan hidup.
+
+ keunggulan dari BILIK JELANTAH diantaranya menyediakan layanan pengumpulan minyak jelantah yang menyediakan beragam fitur menarik dan mudah digunakan serta Tersedianya layanan jual-beli barang dan hasil pengumpulan minyak itu pendataan secara digital akan memudahkan berbagai organisasi berbasis lingkungan dalam menghitung jumlah limbah minyak jelantah yang dihasilkan rumah tangga
+"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView19"
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

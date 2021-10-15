@@ -9,7 +9,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_125sdp"
+        android:layout_height="wrap_content"
         android:background="@drawable/ic_bonus"
         android:padding="@dimen/_7sdp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,18 +32,18 @@
 
         <TextView
             android:id="@+id/textView14"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="9dp"
             android:layout_marginLeft="9dp"
             android:layout_marginTop="@dimen/_10sdp"
-            android:layout_marginEnd="9dp"
-            android:layout_marginRight="9dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginRight="29dp"
             android:fontFamily="@font/bold"
             android:text="Rp.5.000"
             android:textColor="@color/white"
             android:textSize="35sp"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_klaim"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -52,11 +52,23 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/regular"
-            android:text="Setor Minyak 25 liter"
+            android:text="Setor Minyak \nKelipatan 25 liter"
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="@+id/textView14"
             app:layout_constraintStart_toStartOf="@+id/textView14"
             app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <ImageView
+            android:id="@+id/btn_klaim"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_group_98"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.474" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -2,16 +2,39 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.codes.bilikjelantah">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BilikJelantah">
-        <activity android:name=".RiwayatPenyetoran"></activity>
+        <activity android:name=".JadwalPenyetoran"></activity>
+        <activity android:name=".MenuAdminActivity" />
+        <activity
+            android:name=".MenuAdmin"
+            android:label="@string/title_activity_menu_admin" />
+        <activity
+            android:name=".MenuADm"
+            android:label="@string/title_activity_menu_a_dm" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WebviewActivity" />
+        <activity android:name=".DetailArtikelActivity" />
+        <activity android:name=".TentangAplikasi" />
+        <activity android:name=".BantuanActivity" />
+        <activity android:name=".DetailProfilActivity" />
+        <activity android:name=".RiwayatPenyetoran" />
         <activity android:name=".SuksesSetorActivity" />
-        <activity android:name=".KonfirmasiSetor"></activity>
+        <activity android:name=".KonfirmasiSetor" />
         <activity
             android:name=".BonusActivity"
             android:label="@string/title_activity_bonus" />
@@ -23,13 +46,7 @@
         <activity
             android:name=".MainMenu"
             android:label="@string/title_activity_main_menu" />
-        <activity android:name=".LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity" />
     </application>
 

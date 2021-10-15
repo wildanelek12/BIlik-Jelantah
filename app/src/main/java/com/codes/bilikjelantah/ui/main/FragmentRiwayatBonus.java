@@ -1,14 +1,27 @@
 package com.codes.bilikjelantah.ui.main;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.codes.bilikjelantah.Adapter.AdapterRiwayatBonus;
+import com.codes.bilikjelantah.Adapter.AdapterRiwayatTarik;
+import com.codes.bilikjelantah.Model.Bonus;
+import com.codes.bilikjelantah.Model.Penarikan;
 import com.codes.bilikjelantah.R;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -25,6 +38,9 @@ public class FragmentRiwayatBonus extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private RecyclerView rvRiwayatBonus;
+    AdapterRiwayatBonus adapterRiwayatBonus;
+    ArrayList<Bonus>bonusArrayList;
 
     public FragmentRiwayatBonus() {
         // Required empty public constructor
@@ -61,6 +77,38 @@ public class FragmentRiwayatBonus extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_riwayat_bonus, container, false);
+        View root = inflater.inflate(R.layout.fragment_riwayat_bonus, container, false);
+        initView(root);
+        bonusArrayList=new ArrayList<>();
+        rvRiwayatBonus.setLayoutManager(new LinearLayoutManager(getContext()));
+        DatabaseReference reference2 = FirebaseDatabase.getInstance().getReference("bonus").child(FirebaseAuth.getInstance().getCurrentUser().getUid());
+        reference2.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                bonusArrayList.clear();
+                if (dataSnapshot.exists()){
+                    for (DataSnapshot npsnapshot : dataSnapshot.getChildren()){
+                        Bonus l=npsnapshot.getValue(Bonus.class);
+                        bonusArrayList.add(l);
+                    }
+                    adapterRiwayatBonus=new AdapterRiwayatBonus(getContext(),bonusArrayList);
+                    adapterRiwayatBonus.notifyDataSetChanged();
+                    rvRiwayatBonus.setAdapter(adapterRiwayatBonus);
+
+                }
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+
+        return root;
+    }
+
+    private void initView(View view) {
+        rvRiwayatBonus = (RecyclerView) view.findViewById(R.id.rv_riwayat_bonus);
     }
 }

@@ -1,10 +1,13 @@
 package com.codes.bilikjelantah;
 
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
-import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioButton;
@@ -17,7 +20,12 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
-import java.util.Set;
+import java.text.NumberFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
+
+import cn.pedant.SweetAlert.SweetAlertDialog;
 
 public class SetorMinyak extends AppCompatActivity {
 
@@ -33,6 +41,10 @@ public class SetorMinyak extends AppCompatActivity {
     private TextView tvMetodeBayar;
     private ConstraintLayout clMetodeSetor;
     private ConstraintLayout clMetodeBayar;
+    private TextView tvJumlahSaldo;
+    double total_jumlah = 0,total_didapat;
+    String nama,alamat,hp,tanggal,jumlah,metode_setor,metode_bayar;
+    final Calendar myCalendar = Calendar.getInstance();
 
 
     @Override
@@ -40,6 +52,59 @@ public class SetorMinyak extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setor_minyak);
         initView();
+
+
+
+        DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
+
+            @Override
+            public void onDateSet(DatePicker view, int year, int monthOfYear,
+                                  int dayOfMonth) {
+                // TODO Auto-generated method stub
+                myCalendar.set(Calendar.YEAR, year);
+                myCalendar.set(Calendar.MONTH, monthOfYear);
+                myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                updateLabel();
+            }
+
+        };
+
+        etTglPenyetor.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                new DatePickerDialog(SetorMinyak.this, date, myCalendar
+                        .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
+                        myCalendar.get(Calendar.DAY_OF_MONTH)).show();
+            }
+        });
+
+        etJumlahSetor.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+                if (etJumlahSetor.getText().toString().equals("")){
+                    tvJumlahSaldo.setText("Rp 0");
+                }else {
+                    Locale localeID = new Locale("in", "ID");
+                    NumberFormat formatRupiah = NumberFormat.getCurrencyInstance(localeID);
+                    double jumlah = Integer.parseInt(etJumlahSetor.getText().toString());
+                    total_jumlah = jumlah * 5000;
+                    tvJumlahSaldo.setText(formatRupiah.format(total_jumlah));
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
+            }
+        });
         btnPilihMtdPembayaran.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,12 +116,14 @@ public class SetorMinyak extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         int selectedId = radioGroup.getCheckedRadioButtonId();
-                        if (selectedId==0){
+                        if (selectedId == 0) {
                             bottomSheetDialogFragment.dismiss();
-                        }else{
+                        } else {
                             RadioButton radioButton = (RadioButton) bottomSheetDialogFragment.findViewById(selectedId);
                             tvMetodeBayar.setText(radioButton.getText());
-                            clMetodeBayar.setBackgroundColor(Color.GREEN);
+                            tvMetodeBayar.setTextColor(Color.parseColor("#ffffff"));
+                            clMetodeBayar.setBackgroundColor(Color.parseColor("#F4A22B"));
+                            metode_bayar = radioButton.getText().toString();
                             bottomSheetDialogFragment.dismiss();
                         }
                     }
@@ -75,12 +142,14 @@ public class SetorMinyak extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         int selectedId = radioGroup.getCheckedRadioButtonId();
-                        if (selectedId==0){
+                        if (selectedId == 0) {
                             bottomSheetDialogFragment.dismiss();
-                        }else{
+                        } else {
                             RadioButton radioButton = (RadioButton) bottomSheetDialogFragment.findViewById(selectedId);
                             tvMetodeSetor.setText(radioButton.getText());
-                            clMetodeSetor.setBackgroundColor(Color.GREEN);
+                            tvMetodeSetor.setTextColor(Color.parseColor("#ffffff"));
+                            clMetodeSetor.setBackgroundColor(Color.parseColor("#F4A22B"));
+                            metode_setor = radioButton.getText().toString();
                             bottomSheetDialogFragment.dismiss();
                         }
                     }
@@ -88,13 +157,47 @@ public class SetorMinyak extends AppCompatActivity {
                 bottomSheetDialogFragment.show();
             }
         });
+
         btnLanjutSetor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SetorMinyak.this,KonfirmasiSetor.class);
-                startActivity(intent);
+
+
+                if (etNamaPenyetor.getText().toString().equals("")||etAlamatPenyetor.getText().toString().equals("")||etHandphonePenyetor.getText().toString().equals("")||etTglPenyetor.getText().toString().equals("")||etJumlahSetor.getText().toString().equals("")||metode_bayar==null||metode_setor==null){
+                    new SweetAlertDialog(SetorMinyak.this, SweetAlertDialog.ERROR_TYPE)
+                            .setTitleText("Oops...")
+                            .setContentText("Semua Wajib Di Isi")
+                            .show();
+                }else if(etJumlahSetor.getText().toString().equals("0")){
+                    new SweetAlertDialog(SetorMinyak.this, SweetAlertDialog.ERROR_TYPE)
+                            .setTitleText("Oops...")
+                            .setContentText("Minimal 1 Liter !")
+                            .show();
+                }else {
+                    nama = etNamaPenyetor.getText().toString();
+                    alamat = etAlamatPenyetor.getText().toString();
+                    hp = etHandphonePenyetor.getText().toString();
+                    tanggal = etTglPenyetor.getText().toString();
+                    jumlah = etJumlahSetor.getText().toString();
+                    total_didapat = total_jumlah;
+                    Intent intent = new Intent(SetorMinyak.this, KonfirmasiSetor.class);
+                    intent.putExtra("nama",nama);
+                    intent.putExtra("alamat",alamat);
+                    intent.putExtra("hp",hp);
+                    intent.putExtra("tanggal",tanggal);
+                    intent.putExtra("jumlah",jumlah);
+                    intent.putExtra("total_didapat",total_didapat);
+                    intent.putExtra("metode_bayar",metode_bayar);
+                    intent.putExtra("metode_setor",metode_setor);
+                    startActivity(intent);
+
+                }
+
+
             }
         });
+
+
 
     }
 
@@ -111,5 +214,13 @@ public class SetorMinyak extends AppCompatActivity {
         tvMetodeBayar = (TextView) findViewById(R.id.tv_metode_bayar);
         clMetodeSetor = (ConstraintLayout) findViewById(R.id.cl_metode_setor);
         clMetodeBayar = (ConstraintLayout) findViewById(R.id.cl_metode_bayar);
+        tvJumlahSaldo = (TextView) findViewById(R.id.tv_jumlah_saldo);
+    }
+
+    private void updateLabel() {
+        String myFormat = "MM/dd/yy"; //In which you need put here
+        SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+
+        etTglPenyetor.setText(sdf.format(myCalendar.getTime()));
     }
 }

@@ -6,8 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".ui.main.FragmentRiwayatTunai">
 
-    <include
-        layout="@layout/item_riwayat_penarikan"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_riwayat_tunai"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
