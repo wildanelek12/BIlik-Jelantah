@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/register"
+    android:background="@drawable/login_bg"
     tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_100sdp"
+        android:layout_height="@dimen/_120sdp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="20dp"
+        android:scaleType="centerCrop"
         android:layout_marginRight="20dp"
         android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,7 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_20sdp"
         android:layout_marginBottom="25dp"
         android:drawableLeft="@drawable/ic_baseline_person_outline_24"
         android:hint="Email"
@@ -50,12 +51,20 @@
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/et_email" />
 
-    <ImageView
+    <TextView
         android:id="@+id/btn_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_login"
+        android:background="@drawable/ic_login"
         android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="@color/white"
+        android:text="Login"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:textStyle="bold"
+        android:textSize="@dimen/_14sdp"
+        android:fontFamily="@font/semibold"
         app:layout_constraintEnd_toEndOf="@+id/et_password"
         app:layout_constraintStart_toStartOf="@+id/et_password"
         app:layout_constraintTop_toBottomOf="@+id/et_password" />

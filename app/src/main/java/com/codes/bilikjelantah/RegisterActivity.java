@@ -34,7 +34,7 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText etNama;
     private EditText etPassword;
     private EditText etKonfirmPassword;
-    private ImageView btnLogin;
+    private TextView btnLogin;
     private FirebaseAuth mAuth;
     DatabaseReference databaseReference;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
@@ -97,7 +97,7 @@ public class RegisterActivity extends AppCompatActivity {
         etNama = (EditText) findViewById(R.id.et_nama);
         etPassword = (EditText) findViewById(R.id.et_password);
         etKonfirmPassword = (EditText) findViewById(R.id.et_konfirm_password);
-        btnLogin = (ImageView) findViewById(R.id.btn_login);
+        btnLogin = (TextView) findViewById(R.id.btn_login);
     }
     private void storeData(){
         SweetAlertDialog pDialog = new SweetAlertDialog(RegisterActivity.this, SweetAlertDialog.PROGRESS_TYPE);

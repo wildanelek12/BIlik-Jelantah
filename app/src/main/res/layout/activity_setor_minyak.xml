@@ -181,7 +181,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/semibold"
-                android:text="Liter"
+                android:text="Kg"
                 android:textSize="20sp"
                 android:paddingHorizontal="@dimen/_10sdp"
                 app:layout_constraintBottom_toBottomOf="@+id/et_jumlah_setor"
@@ -266,7 +266,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/orange"
+        android:background="@color/hijaualus"
         android:paddingVertical="@dimen/_10sdp"
         app:layout_constraintBottom_toBottomOf="parent">
 

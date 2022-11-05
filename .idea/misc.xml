@@ -1,6 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/drawable/bg_et_setor.xml" value="0.158" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/drawable/bg_register.xml" value="0.192" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/drawable/ic_baseline_app_blocking_24.xml" value="0.232" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/drawable/ic_baseline_date_range_24.xml" value="0.158" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/drawable/ic_baseline_help_24.xml" value="0.232" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.232" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/drawable/ic_baseline_location_on_24.xml" value="0.158" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.158" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.193" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/drawable/ic_baseline_production_quantity_limits_24.xml" value="0.158" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.232" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/drawable/ic_bonus.xml" value="0.232" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/drawable/ic_btn_lanjut_setor.xml" value="0.232" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/drawable/ic_btn_lanjutan.xml" value="0.158" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/drawable/ic_group_5.xml" value="0.232" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/drawable/ic_group_97.xml" value="0.232" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/drawable/ic_group_98.xml" value="0.232" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/drawable/ic_group_bg_saldo_home.xml" value="0.158" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/drawable/ic_home_1.xml" value="0.158" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/drawable/ic_home_2.xml" value="0.232" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/drawable/ic_home_total_setor.xml" value="0.158" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/drawable/ic_login.xml" value="0.193" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/drawable/ic_menu_home_3.xml" value="0.232" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/drawable/ic_tarik_saldo.xml" value="0.232" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/activity_bantuan.xml" value="0.18489583333333334" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/activity_bonus.xml" value="0.18489583333333334" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/activity_detail_artikel.xml" value="0.18489583333333334" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/activity_detail_profil.xml" value="0.18489583333333334" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/activity_jadwal_penyetoran.xml" value="0.18489583333333334" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/activity_konfirmasi_setor.xml" value="0.18489583333333334" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/activity_main.xml" value="0.18489583333333334" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/activity_main_menu.xml" value="0.18489583333333334" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/activity_menu_admin.xml" value="0.18489583333333334" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/activity_register.xml" value="0.18489583333333334" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/activity_riwayat_penyetoran.xml" value="0.18489583333333334" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/activity_setor_minyak.xml" value="0.16" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/activity_splash_screen.xml" value="0.18489583333333334" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/activity_sukses_setor.xml" value="0.18489583333333334" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/activity_tarik_tunai.xml" value="0.18489583333333334" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/activity_tentang_aplikasi.xml" value="0.18489583333333334" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/activity_webview.xml" value="0.18489583333333334" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/fragment_bonus.xml" value="0.18489583333333334" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/fragment_dashboard.xml" value="0.25" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/fragment_jelantah.xml" value="0.35280797101449274" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/fragment_notifications.xml" value="0.35280797101449274" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/fragment_riwayat_bonus.xml" value="0.35280797101449274" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/fragment_riwayat_tunai.xml" value="0.35280797101449274" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/fragment_tarik_tunai.xml" value="0.35280797101449274" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/item_artikel.xml" value="0.35280797101449274" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/item_bonus.xml" value="0.35280797101449274" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/item_dialog.xml" value="0.35280797101449274" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/item_edit_pw.xml" value="0.35280797101449274" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/item_riwayat_bonus.xml" value="0.35280797101449274" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/item_riwayat_penarikan.xml" value="0.35280797101449274" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/item_riwayat_setor.xml" value="0.35280797101449274" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/partial_metode_pembayaran.xml" value="0.35280797101449274" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/layout/partial_metode_setor.xml" value="0.35280797101449274" />
+        <entry key="..\:/AndroidProject/BIlik Jelantah/app/src/main/res/menu/bottom_nav_menu.xml" value="0.18489583333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

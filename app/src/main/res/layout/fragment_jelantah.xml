@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/register"
+    android:background="@drawable/login_bg"
     android:paddingHorizontal="@dimen/_20sdp"
     tools:context=".ui.notifications.NotificationsFragment">
 
@@ -14,9 +14,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_40sdp"
         android:fontFamily="@font/bold"
-        android:text="Jelantah.id"
+        android:text="FoodWaste Market"
         android:textAlignment="center"
-        android:textColor="@color/orange"
+        android:textColor="@color/hijau"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,11 +28,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="51dp"
         android:fontFamily="@font/medium"
-        android:text="Jelantah.id adalah marketplace yang khusus menjual produk daur ulang yang ramah lingkungan. Kami mengajak kerjasama seluruh UMKM dan masyarakat di Indonesia yang membuat produk daur ulang untuk memasarkan dan promosi produknya di sini. Berikut keunggulan Jelantah.id :
-        \n 1. Mendapat harga khusus dan special
-        \n 2. User aplikasi yang memiliki ketertarikan dengan produk ramah lingkungan
-        \n 3. Dibantu promosi produk di seluruh sosial media dan grup komunitas kami
-"
+        android:text="FoodWaste Market adalah marketplace yang khusus menjual produk daur ulang dari olahan limbah sisa makanan. kami mengajak seluruh UMKM dan masyarakat di indonesia yang membuat produk daur ulang limbah sisa makanan untuk memasarkan dan promosi produknya di FoodWaste Market ini.
+\nKeunggulan :
+\n 1. Mendapat harga spesial
+\n 2. User aplikasi memiliki ketertarikan dengan produk ramah lingkungan
+\n 3. Dibantu promosi produk di seluruh sosial media dan grup komunitas kami"
         android:textColor="@color/black"
         android:textSize="14sp"
         android:lineHeight="@dimen/_20sdp"
@@ -55,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Buka Jelantah.id"
+        android:text="Buka FoodWaste Market"
         app:layout_constraintBottom_toTopOf="@+id/btn_daftar_penjual"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

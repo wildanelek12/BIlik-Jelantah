@@ -10,7 +10,7 @@
         android:id="@+id/constraintLayout7"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_100sdp"
-        android:background="@color/orange"
+        android:background="@color/hijau"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,7 +63,7 @@
                 android:layout_marginTop="@dimen/_15sdp"
                 android:fontFamily="@font/semibold"
                 android:text="Nama Penyetor"
-                android:textColor="@color/orange"
+                android:textColor="@color/hijau"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_konfirmasi_transaksi" />
@@ -87,7 +87,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:fontFamily="@font/semibold"
                 android:text="Alamat"
-                android:textColor="@color/orange"
+                android:textColor="@color/hijau"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_din_nama_penyetor" />
@@ -111,7 +111,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:fontFamily="@font/semibold"
                 android:text="Tanggal Penyetoran"
-                android:textColor="@color/orange"
+                android:textColor="@color/hijau"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_din_alamat" />
@@ -135,7 +135,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:fontFamily="@font/semibold"
                 android:text="Jumlah Liter Penyetoran"
-                android:textColor="@color/orange"
+                android:textColor="@color/hijau"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_din_tanggal" />
@@ -159,7 +159,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:fontFamily="@font/semibold"
                 android:text="Jumlah Saldo Didapat"
-                android:textColor="@color/orange"
+                android:textColor="@color/hijau"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_din_jumlah_setor" />
@@ -183,7 +183,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:fontFamily="@font/semibold"
                 android:text="Metode Penyetoran"
-                android:textColor="@color/orange"
+                android:textColor="@color/hijau"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_din_saldo" />
@@ -207,7 +207,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:fontFamily="@font/semibold"
                 android:text="Metode Penyetoran"
-                android:textColor="@color/orange"
+                android:textColor="@color/hijau"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_din_metode_setor" />
@@ -241,7 +241,7 @@
         android:id="@+id/constraintLayout8"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="#F6EBDB"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

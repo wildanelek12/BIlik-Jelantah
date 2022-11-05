@@ -13,7 +13,7 @@
     <item
         android:id="@+id/navigation_jelantah"
         android:icon="@drawable/ic_baseline_production_quantity_limits_24"
-        android:title="Jelantah.id" />
+        android:title="FoodWaste Market" />
     <item
         android:id="@+id/navigation_notifications"
         android:icon="@drawable/ic_baseline_person_24"

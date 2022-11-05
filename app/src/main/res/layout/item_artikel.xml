@@ -32,7 +32,7 @@
         android:layout_marginHorizontal="@dimen/_10sdp"
         android:fontFamily="@font/medium"
         android:layout_marginTop="@dimen/_10sdp"
-        android:text="Bahaya Minyak Jelantah bagi Kesehatan dan Lingkungan"
+        android:text="Sisa Makanan jadi Limbah Dominan, Apa Dampaknya?"
         android:textColor="#404040"
         android:textSize="13sp"
         app:layout_constraintEnd_toEndOf="parent"

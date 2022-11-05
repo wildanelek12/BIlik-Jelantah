@@ -95,7 +95,7 @@ public class SetorMinyak extends AppCompatActivity {
                     Locale localeID = new Locale("in", "ID");
                     NumberFormat formatRupiah = NumberFormat.getCurrencyInstance(localeID);
                     double jumlah = Integer.parseInt(etJumlahSetor.getText().toString());
-                    total_jumlah = jumlah * 5000;
+                    total_jumlah = jumlah * 2500;
                     tvJumlahSaldo.setText(formatRupiah.format(total_jumlah));
                 }
             }

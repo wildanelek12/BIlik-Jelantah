@@ -22,7 +22,7 @@ import cn.pedant.SweetAlert.SweetAlertDialog;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private ImageView btnLogin;
+    private TextView btnLogin;
     private TextView tvGoToRegister;
     private EditText etEmail;
     private EditText etPassword;
@@ -52,7 +52,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        btnLogin = (ImageView) findViewById(R.id.btn_login);
+        btnLogin = (TextView) findViewById(R.id.btn_login);
         tvGoToRegister = (TextView) findViewById(R.id.tv_go_to_register);
         etEmail = (EditText) findViewById(R.id.et_email);
         etPassword = (EditText) findViewById(R.id.et_password);

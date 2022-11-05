@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/register"
+    android:background="@drawable/login_bg"
     android:paddingHorizontal="@dimen/_20sdp"
     tools:context=".ui.notifications.NotificationsFragment">
 
@@ -15,7 +15,7 @@
         android:fontFamily="@font/bold"
         android:text="Tentang Aplikasi"
         android:textAlignment="center"
-        android:textColor="@color/orange"
+        android:textColor="@color/hijau"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/textView19"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,7 +29,7 @@
         android:fontFamily="@font/bold"
         android:text="Bilik Jelantah"
         android:textAlignment="center"
-        android:textColor="@color/orange"
+        android:textColor="@color/hijau"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/textView21"
         app:layout_constraintEnd_toEndOf="@+id/textView18"

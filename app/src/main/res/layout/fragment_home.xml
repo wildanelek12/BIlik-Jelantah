@@ -173,7 +173,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_5sdp"
                 android:fontFamily="@font/medium"
-                android:text="Setor Jelantah"
+                android:text="Setor Limbah Sisa Makanan"
                 android:textAlignment="center"
                 android:textColor="#404040"
                 android:textSize="12sp"
