@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Bilik Jelantah</string>
+    <string name="app_name">Food Waste Bank</string>
     <string name="title_activity_main_menu">MainActivity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
